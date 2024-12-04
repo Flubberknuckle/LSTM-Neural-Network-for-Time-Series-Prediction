@@ -15,6 +15,8 @@ def plot_results(predicted_data, true_data):
     """Plot true vs predicted data."""
     fig = plt.figure(facecolor='white')
     ax = fig.add_subplot(111)
+    plt.xlabel('Time (1hr/step)')
+    plt.ylabel('Price ($)')
     ax.plot(true_data, label='True Data')
     plt.plot(predicted_data, label='Prediction')
     plt.legend()
@@ -25,6 +27,8 @@ def plot_results_multiple(predicted_data, true_data, prediction_len):
     """Plot multiple predicted sequences vs true data."""
     fig = plt.figure(facecolor='white')
     ax = fig.add_subplot(111)
+    plt.xlabel('Time (1hr/step)')
+    plt.ylabel('Price ($)')
     ax.plot(true_data, label='True Data')
     # Pad the list of predictions to shift it in the graph to its correct start
     for i, data in enumerate(predicted_data):
