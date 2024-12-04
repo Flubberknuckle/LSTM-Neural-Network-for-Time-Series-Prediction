@@ -1,9 +1,9 @@
 {
 	"data": {
-		"filename": "sp500.csv",
+		"filename": "Coinbase-BTC-USD.csv",
 		"columns": [
-			"Close",
-			"Volume"
+			"close",
+			"volume"
 		],
 		"sequence_length": 50,
 		"train_test_split": 0.85,
